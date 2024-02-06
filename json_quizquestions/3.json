@@ -126,13 +126,12 @@
       ]
     },
     {
-      "Q": "Fork system calls via python: does the cloned and original process know who is the original?",
+      "Q": "Fork system calls via python: does the cloned and original process know who is the original?</br><i>Hint:</i>  Clone is child of original, which makes original the parent.",
       "A": [
-        "_Yes, the fork call returns a number <tt>x</tt>. If <tt>x == 0</tt> then process is the child/clone, otherwise <tt>x</tt> is the id of the child.",
-        "No, the fork call returns the same number <tt>x</tt> (id of the child/clone) to both the parent/original and child/clone",
+        "_Yes, the fork call returns to original the id of the clone, but to clone it returns 0 (which is not a valid id)",
+        "No, the fork call returns the same number to both the original and the clone",
         "No, the fork call does not return anything",
-        "No, the fork call returns the same number <tt>x</tt> (id of the child/clone) to both the parent/original and child/clone",
-        "Yes, the fork call returns a number <tt>x</tt>. If <tt>x > 0</tt> then process is the child/clone."
+        "Yes, the fork call returns to original 0 (which is not a valid id), but to clone it return the id of the original"
       ]
     }
   ]

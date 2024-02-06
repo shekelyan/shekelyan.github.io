@@ -32,7 +32,7 @@
 
 
 
-    <p><b>Question:</b> What is not true about Round Robin (RR) scheduling?</p>
+    <p><b>Question:</b> Fork system calls via python: does the cloned and original process know who is the original?</br><i>Hint:</i>  Clone is child of original, which makes original the parent.</p>
 
     <table style="border:none;">
 
@@ -44,7 +44,7 @@
 
             <td style="border:none;"><a href="63268097.html"><b><tt>A</tt></b></a></td>
 
-            <td style="border:none;">RR tends to give tasks more equal share than first-come first-served</td>
+            <td style="border:none;">Yes, the fork call returns to original 0 (which is not a valid id), but to clone it return the id of the original</td>
 
             
 
@@ -52,7 +52,7 @@
 
             <td style="border:none;"><a href="421280688.html"><b><tt>B</tt></b></a></td>
 
-            <td style="border:none;">RR prioritises tasks that were scheduled longest ago (breaks ties based on ordering of tasks)</td>
+            <td style="border:none;">No, the fork call returns the same number to both the original and the clone</td>
 
             
 
@@ -68,7 +68,7 @@
 
             <td style="border:none;"><a href="739112900.html"><b><tt>C</tt></b></a></td>
 
-            <td style="border:none;">RR preempts each task after end of time quantum</td>
+            <td style="border:none;">No, the fork call does not return anything</td>
 
             
 
@@ -76,7 +76,7 @@
 
             <td style="border:none;"><a href="680849514.html"><b><tt>D</tt></b></a></td>
 
-            <td style="border:none;">RR changes scheduled task in each time quantum</td>
+            <td style="border:none;">Yes, the fork call returns to original the id of the clone, but to clone it returns 0 (which is not a valid id)</td>
 
             
 
@@ -87,12 +87,6 @@
         
 
         <tr style="border:none;">
-
-            
-
-            <td style="border:none;"><a href="246949006.html"><b><tt>E</tt></b></a></td>
-
-            <td style="border:none;">RR keeps CPU idle till end of time quantum if scheduled task is waiting</td>
 
             
 
