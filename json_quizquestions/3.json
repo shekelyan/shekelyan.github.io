@@ -37,7 +37,7 @@
     {
       "Q": "What is a CPU burst?",
       "A": [
-        "_How long a process run on CPU before it needs to wait for something",
+        "_How long a process runs on CPU before it needs to wait for something",
         "How long the CPU runs without being idle",
         "How many processes the CPU runs in a time frame",
         "Number of processes that run on the CPU"
