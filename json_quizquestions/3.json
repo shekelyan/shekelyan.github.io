@@ -1,0 +1,139 @@
+{
+  "lives": 15,
+  "shufflequestions": 1,
+  "shuffleanswers": 1,
+  "quiz": [
+    {
+      "Q": "What are time slots called for which scheduler decides who gets CPU?",
+      "A": ["_Time quantums", "Jobs ", "Queues", "Levels", "Forks"]
+    },
+    {
+      "Q": "What does a fork system call do?",
+      "A": [
+        "_Clones process by copying its process context",
+        "Switches which code is executed by process",
+        "Creates a child process for a program from scratch"
+      ]
+    },
+    {
+      "Q": "Which statement is true for task scheduling in modern systems?",
+      "A": [
+        "Saving energy is important, so we should leave the CPU idle sometimes",
+        "Rushing tasks is not a good idea, we should not try to complete as many tasks as possible",
+        "Life is not fair, we do not need give all tasks appropriate share of CPU time.",
+        "Tasks like to be alone sometimes, so we should not return to them too frequently",
+        "_The order in which tasks were launched is not everything, we need to look at other things as well."
+      ]
+    },
+    {
+      "Q": "It is often useful to distinguish between batch and interactive processes, what is their behaviour?",
+      "A": [
+        "_Batch processes like to calculate a lot (CPU heavy) and interactive processes like to talk a lot (I/O)",
+        "Batch processes like to talk a lot (I/O) and interactive processes like to calculate a lot (CPU heavy)",
+        "Batch processes do many calculations at once and interactive processes do one calculation at a time",
+        "Batch processes do many I/O operations at once and interactive processes do one I/O operation at a time"
+      ]
+    },
+    {
+      "Q": "What is a CPU burst?",
+      "A": [
+        "_How long a process run on CPU before it needs to wait for something",
+        "How long the CPU runs without being idle",
+        "How many processes the CPU runs in a time frame",
+        "Number of processes that run on the CPU"
+      ]
+    },
+    {
+      "Q": "What is the preemptive scheduling (PS) and non-preemptive scheduling (NPS)?",
+      "A": [
+        "_PS switches away from a task after a pre-determined amount of time, while NPS lets the task run as long as it wants",
+        "PS predicts when a task is likely to become idle and preemtively switches away from it, while NPS waits for a task to become idle",
+        "PS maximises throughput by preempting the tasks that are quickest to complete, while NPS observes first-come first-served"
+      ]
+    },
+    {
+      "Q": "What is not true about Round Robin (RR) scheduling?",
+      "A": [
+        "RR prioritises tasks that were scheduled longest ago (breaks ties based on ordering of tasks)",
+        "RR changes scheduled task in each time quantum",
+        "RR preempts each task after end of time quantum",
+        "RR tends to give tasks more equal share than first-come first-served",
+        "_RR keeps CPU idle till end of time quantum if scheduled task is waiting"
+      ]
+    },
+    {
+      "Q": "What does Virtual Round Robin (VRR) aim to improve upon compared to ordinary Round Robin (RR)?",
+      "A": [
+        "_Giving I/O bound tasks and CPU bound tasks more similar amount of CPU time",
+        "Giving CPU bound tasks more CPU time",
+        "Giving I/O bound tasks less CPU time",
+        "Incorporating task priorities"
+      ]
+    },
+    {
+      "Q": "What does os.execv() in python's OS library do?",
+      "A": [
+        "_Changes program being run by current process",
+        "Creates new process to run a program",
+        "Forks a process to run a program"
+      ]
+    },
+    {
+      "Q": "What is a Zombie process?",
+      "A": [
+        "_Terminated task in process table",
+        "Terminated task that restarted itself",
+        "Task whose parent process has terminated",
+        "Task whose child process has terminated"
+      ]
+    },
+    {
+      "Q": "Which statement about multi-level feedback queues (MLFQ) is not correct?",
+      "A": [
+        "There is one queue per level",
+        "Top-level queues are served first",
+        "Each task has a level and is put into queue for that level",
+        "Task level moves one level down (away from top-level) each time it is preempted",
+        "_Task level moves one level up (towards top-level) each time it is preempted",
+        "New tasks start at top-level"
+      ]
+    },
+    {
+      "Q": "Which statement about scheduling is not correct?",
+      "A": [
+        "Scheduling strategy can impact how much time is spent on running the dispatcher/scheduler",
+        "Scheduling strategy can impact how reactive a system is",
+        "Scheduling strategy can impact how fast a system is",
+        "_Scheduling strategy can impact how much CPU time a task needs until completion"
+      ]
+    },
+    {
+      "Q": "What is equivalent to first-come first-served?",
+      "A": [
+        "_Last one to enter the queue gets served last",
+        "First one to enter the queue gets served last",
+        "Last one to enter the queue gets served first"
+      ]
+    },
+    {
+      "Q": "What does copy on write (COW) mean?",
+      "A": [
+        "_Lazy copy: As long as a copy stays identical to original, read-only reference to original serves as 'copy'",
+        "Eager copy: Write operation is 'on' for copying",
+        "Each write operation is accompanied by a copying operation",
+        "Each copying operation is accompanied by a write operation",
+        "It's the opposite of copy on read"
+      ]
+    },
+    {
+      "Q": "Fork system calls via python: does the cloned and original process know who is the original?",
+      "A": [
+        "_Yes, the fork call returns a number <tt>x</tt>. If <tt>x == 0</tt> then process is the child/clone, otherwise <tt>x</tt> is the id of the child.",
+        "No, the fork call returns the same number <tt>x</tt> (id of the child/clone) to both the parent/original and child/clone",
+        "No, the fork call does not return anything",
+        "No, the fork call returns the same number <tt>x</tt> (id of the child/clone) to both the parent/original and child/clone",
+        "Yes, the fork call returns a number <tt>x</tt>. If <tt>x > 0</tt> then process is the child/clone."
+      ]
+    }
+  ]
+}

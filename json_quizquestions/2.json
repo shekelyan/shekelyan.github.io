@@ -1,0 +1,132 @@
+{
+  "lives": 15,
+  "shufflequestions": 1,
+  "shuffleanswers": 1,
+  "quiz": [
+    {
+      "Q": "Where are registers located and what are they used for?",
+      "A": [
+        "_On the CPU chip, storing inputs/outputs of operations",
+        "In the registry, keeping track of changes",
+        "On the main board, coordinating hardware devices"
+      ]
+    },
+    {
+      "Q": "What is a process?",
+      "A": [
+        "_Instance of program",
+        "Copy of program image",
+        "Executable file on disk"
+      ]
+    },
+    {
+      "Q": "Does a process know when it is being interrupted?",
+      "A": [
+        "_Processes kept in the dark about scheduling and can only check wallclock time after they run again",
+        "Processes learn about their interruption and then sometimes issues a veto to ensure critical operation",
+        "Processes are kept in the loop about their scheduling."
+      ]
+    },
+    {
+      "Q": "Which state is not in the five state model?",
+      "A": [
+        "New: Freshly birthed by some running process",
+        "Ready: Waits for dispatch",
+        "Running",
+        "Blocked: Waits for event such as I/O",
+        "Exit: Termination",
+        "_Suspended: Moved to disk to make space for other processes"
+      ]
+    },
+    {
+      "Q": "What information does the Linux kernel not keep about processes?",
+      "A": [
+        "Identifier",
+        "State",
+        "Scheduling Priority",
+        "Process Context such as stack pointers and register values",
+        "Execution time",
+        "_Internet Access"
+      ]
+    },
+    {
+      "Q": "What is not correct about kernel vs user mode?",
+      "A": [
+        "Kernel mode limits certain powers to kernel process to safeguard system",
+        "_Admin users execute programs in kernel mode",
+        "If a user process wants to read from disk it needs the kernel to do it for the process via system call",
+        "Kernel can answer system calls, because it runs in kernel mode"
+      ]
+    },
+    {
+      "Q": "What is the relationship between Trap and Interrupt?",
+      "A": [
+        "_Trap is internally triggered by some exceptional state within process whereas interrupt is externally triggered.",
+        "Trap is a more general term for interrupt.",
+        "Interrupt is a more general for trap.",
+        "Traps are to catch bad processes that maliciously interrupt other processes"
+      ]
+    },
+    {
+      "Q": "Can a mode switch be done without a context switch?",
+      "A": [
+        "_No, switching to kernel mode implies kernel process takes over some user process (and vice versa)",
+        "Yes, those are two unrelated concepts",
+        "It depends, as the context can be either a kernel or a user context"
+      ]
+    },
+    {
+      "Q": "Can a process switch be done without a mode switch?",
+      "A": [
+        "_No, kernel is needed to switch out process",
+        "Yes, those are two unrelated concepts",
+        "It depends, as the process can be either a kernel or a user process"
+      ]
+    },
+    {
+      "Q": "What is not correct about the dispatcher?",
+      "A": [
+        "Dispatcher is part of the kernel",
+        "_Dispatcher decides which process to schedule next",
+        "Dispatcher performs context switch",
+        "Dispatcher runs in kernel mode"
+      ]
+    },
+    {
+      "Q": "Which process state is not in the two-state model?",
+      "A": ["Running", "Not Running", "_Blocked"]
+    },
+    {
+      "Q": "Does the CPU know in which mode the system is?",
+      "A": [
+        "_Yes, each modern CPU has a bit somewhere that can be flipped.",
+        "No, that would not be safe",
+        "It depends if the CPU executes kernel or user process code"
+      ]
+    },
+    {
+      "Q": "What is a pointer?",
+      "A": [
+        "_A number that describes the location in memory",
+        "There's no such term in computer science, but there is a dog breed with that name",
+        "The literal name of a function or object"
+      ]
+    },
+    {
+      "Q": "What does a stack pointer describe?",
+      "A": [
+        "_Memory address right after last element on stack",
+        "Memory address at which last element on stack begins",
+        "Memory address where stack begins"
+      ]
+    },
+    {
+      "Q": "How does a system use the stack for function calls?",
+      "A": [
+        "_Function calls do something akin to a context switch and store old contexts (current address, register values etc) in memory using the stack segment.",
+        "Function calls jump to the code of the function and then (to not disturb prior register values) only use the stack segment in memory",
+        "System does not have a stack, it's a data structure that could be used by some processes."
+      ]
+    }
+  ]
+}
