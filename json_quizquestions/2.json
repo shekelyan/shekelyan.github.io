@@ -24,7 +24,7 @@
       "A": [
         "_Processes kept in the dark about scheduling and can only check wallclock time after they run again",
         "Processes learn about their interruption and then sometimes issues a veto to ensure critical operation",
-        "Processes are kept in the loop about their scheduling."
+        "Processes are kept in the loop about their scheduling"
       ]
     },
     {
@@ -61,9 +61,9 @@
     {
       "Q": "What is the relationship between Trap and Interrupt?",
       "A": [
-        "_Trap is internally triggered by some exceptional state within process whereas interrupt is externally triggered.",
-        "Trap is a more general term for interrupt.",
-        "Interrupt is a more general for trap.",
+        "_Trap is internally triggered by some exceptional state within process whereas interrupt is externally triggered",
+        "Trap is a more general term for interrupt",
+        "Interrupt is a more general for trap",
         "Traps are to catch bad processes that maliciously interrupt other processes"
       ]
     },
@@ -99,7 +99,7 @@
     {
       "Q": "Does the CPU know in which mode the system is?",
       "A": [
-        "_Yes, each modern CPU has a bit somewhere that can be flipped.",
+        "_Yes, each modern CPU has a bit somewhere that can be flipped",
         "No, that would not be safe",
         "It depends if the CPU executes kernel or user process code"
       ]
@@ -123,9 +123,9 @@
     {
       "Q": "How does a system use the stack for function calls?",
       "A": [
-        "_Function calls do something akin to a context switch and store old contexts (current address, register values etc) in memory using the stack segment.",
+        "_Function calls store old contexts (current address, register values etc) in memory using the stack segment",
         "Function calls jump to the code of the function and then (to not disturb prior register values) only use the stack segment in memory",
-        "System does not have a stack, it's a data structure that could be used by some processes."
+        "System does not have a stack, it's a data structure that could be used by some processes"
       ]
     }
   ]

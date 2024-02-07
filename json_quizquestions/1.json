@@ -13,7 +13,7 @@
       ]
     },
     {
-      "Q": "Using 'ls' as an example how to check in shell how a command works?",
+      "Q": "Using <tt>ls</tt> as an example, how can one check in the shell how a command works?",
       "A": [
         "human ls",
         "_man ls",
@@ -63,11 +63,11 @@
       "A": [
         "The type of call the system makes to get the user's attention",
         "_Calling function provided by operating system",
-        "Modern system can be called on the phone"
+        "Modern systems can be called on the phone to execute commands"
       ]
     },
     {
-      "Q": "How does one delete a file '1.txt' in the Unix shell?",
+      "Q": "How does one delete a file '<tt>1.txt</tt>' in the Unix shell?",
       "A": ["del 1.txt", "delete 1.txt", "remove 1.txt", "_rm 1.txt"]
     },
     {
@@ -98,10 +98,10 @@
       ]
     },
     {
-      "Q": "If all computers running Linux would suddenly stop working...",
+      "Q": "What might happen if all computers running Linux suddenly stopped working?",
       "A": [
-        "barely anything would happen like in the Y2K panic",
-        "_world-wide chaos and panic may ensue"
+        "barely anything like in the Y2K panic",
+        "_world-wide chaos and panic may ensue (speculation)"
       ]
     },
     {

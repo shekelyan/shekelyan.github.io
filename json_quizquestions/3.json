@@ -20,9 +20,9 @@
       "A": [
         "Saving energy is important, so we should leave the CPU idle sometimes",
         "Rushing tasks is not a good idea, we should not try to complete as many tasks as possible",
-        "Life is not fair, we do not need give all tasks appropriate share of CPU time.",
+        "Life is not fair, we do not need give all tasks appropriate share of CPU time",
         "Tasks like to be alone sometimes, so we should not return to them too frequently",
-        "_The order in which tasks were launched is not everything, we need to look at other things as well."
+        "_The order in which tasks were launched is not everything, we need to look at other things as well"
       ]
     },
     {
@@ -71,7 +71,7 @@
       ]
     },
     {
-      "Q": "What does os.execv() in python's OS library do?",
+      "Q": "What does <tt>os.execv()</tt> in python's OS library do?",
       "A": [
         "_Changes program being run by current process",
         "Creates new process to run a program",
@@ -126,7 +126,7 @@
       ]
     },
     {
-      "Q": "Fork system calls via python: does the cloned and original process know who is the original?</br><i>Hint:</i>  Clone is child of original, which makes original the parent.",
+      "Q": "Fork system calls via python: does the cloned and original process know who is the original?</br><i>Hint:</i>  Clone is child of original, which makes original the parent",
       "A": [
         "_Yes, the fork call returns to original the id of the clone, but to clone it returns 0 (which is not a valid id)",
         "No, the fork call returns the same number to both the original and the clone",
