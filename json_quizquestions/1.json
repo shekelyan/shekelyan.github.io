@@ -4,7 +4,7 @@
   "shuffleanswers": 1,
   "quiz": [
     {
-      "Q": "What is not a role of the operating system?",
+      "Q": "What is <i>not</i> a role of the operating system?",
       "A": [
         "Referee: manage access to resources",
         "Illusionist: hide hardware diversity and resource division",
@@ -24,8 +24,14 @@
       ]
     },
     {
-      "Q": "What is usually not considered part of the operating system?",
-      "A": ["Kernel", "File System", "_Hardware"]
+      "Q": "Which of the following is least likely to be considered part of the operating system?",
+      "A": [
+        "Kernel",
+        "File System",
+        "Graphical User Interface (GUI)",
+        "Text-Based User Interface (TUI)",
+        "_Hardware"
+      ]
     },
     {
       "Q": "What is a Linux distribution?",
@@ -51,18 +57,18 @@
       "A": ["cwd", "_cd ..", "cd++", "goto parent"]
     },
     {
-      "Q": "What is the relationship between Unix, Android, Apple's MacOS and Linux?",
+      "Q": "What is the relationship between BSD, Android, Apple's MacOS and Ubuntu?",
       "A": [
         "They are all completely open-source",
         "There is no relationship",
-        "_They are all Unix-like operating systems with many similarities (somewhat shared ecosystem)"
+        "_They are all Unix/Unix-like operating systems within a somewhat shared ecosystem"
       ]
     },
     {
       "Q": "What is a system call?",
       "A": [
         "The type of call the system makes to get the user's attention",
-        "_Calling function provided by operating system",
+        "_Function provided by operating system that does something on behalf of a program",
         "Modern systems can be called on the phone to execute commands"
       ]
     },
@@ -79,7 +85,7 @@
       ]
     },
     {
-      "Q": "What cannot be learned from knowing more about the inner workings of operating systems?",
+      "Q": "What is least likely to be learned from knowing more about the inner workings of operating systems?",
       "A": [
         "How to design a large, complicated piece of software",
         "_How to reduce the resource needs of software by orders of magnitude",
@@ -100,8 +106,8 @@
     {
       "Q": "What might happen if all computers running Linux suddenly stopped working?",
       "A": [
-        "barely anything like in the Y2K panic",
-        "_world-wide chaos and panic may ensue (speculation)"
+        "Barely anything like in the Y2K panic as I do not know anyone using Linux",
+        "_World-wide chaos and panic may ensue as servers and infrastructure use Linux a lot"
       ]
     },
     {

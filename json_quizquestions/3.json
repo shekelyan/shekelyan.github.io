@@ -10,7 +10,7 @@
     {
       "Q": "What does a fork system call do?",
       "A": [
-        "_Clones process by copying its process context",
+        "_Clones process by copying everything in memory about process",
         "Switches which code is executed by process",
         "Creates a child process for a program from scratch"
       ]
@@ -28,8 +28,8 @@
     {
       "Q": "It is often useful to distinguish between batch and interactive processes, what is their behaviour?",
       "A": [
-        "_Batch processes like to calculate a lot (CPU heavy) and interactive processes like to talk a lot (I/O)",
-        "Batch processes like to talk a lot (I/O) and interactive processes like to calculate a lot (CPU heavy)",
+        "_Batch processes like to calculate a lot (CPU bound) and interactive processes like to talk a lot (I/O bound)",
+        "Batch processes like to talk a lot (I/O bound) and interactive processes like to calculate a lot (CPU bound)",
         "Batch processes do many calculations at once and interactive processes do one calculation at a time",
         "Batch processes do many I/O operations at once and interactive processes do one I/O operation at a time"
       ]
@@ -52,11 +52,11 @@
       ]
     },
     {
-      "Q": "What is not true about Round Robin (RR) scheduling?",
+      "Q": "What is <i>not</i> true about Round Robin (RR) scheduling?",
       "A": [
         "RR prioritises tasks that were scheduled longest ago (breaks ties based on ordering of tasks)",
         "RR changes scheduled task in each time quantum",
-        "RR preempts each task after end of time quantum",
+        "RR preem/Users/michael/Documents/research/quiz/1.jsonpts each task after end of time quantum",
         "RR tends to give tasks more equal share than first-come first-served",
         "_RR keeps CPU idle till end of time quantum if scheduled task is waiting"
       ]
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "Q": "Which statement about multi-level feedback queues (MLFQ) is not correct?",
+      "Q": "Which statement about multi-level feedback queues (MLFQ) is <i>not</i> correct?",
       "A": [
         "There is one queue per level",
         "Top-level queues are served first",
@@ -99,7 +99,7 @@
       ]
     },
     {
-      "Q": "Which statement about scheduling is not correct?",
+      "Q": "Which statement about scheduling is <i>not</i> correct?",
       "A": [
         "Scheduling strategy can impact how much time is spent on running the dispatcher/scheduler",
         "Scheduling strategy can impact how reactive a system is",
@@ -126,12 +126,12 @@
       ]
     },
     {
-      "Q": "Fork system calls via python: does the cloned and original process know who is the original?</br><i>Hint:</i>  Clone is child of original, which makes original the parent",
+      "Q": "Fork system calls via python: does the cloned and original process know who is the original?</br><i>Hint:</i> Clone is child of original, which makes original the parent.",
       "A": [
-        "_Yes, the fork call returns to original the id of the clone, but to clone it returns 0 (which is not a valid id)",
+        "_Yes, the fork call returns to original the id of the clone, but to clone it returns the number 0 (which is not a valid id)",
         "No, the fork call returns the same number to both the original and the clone",
         "No, the fork call does not return anything",
-        "Yes, the fork call returns to original 0 (which is not a valid id), but to clone it return the id of the original"
+        "Yes, the fork call returns to original the number 0 (which is not a valid id), but to clone it return the id of the original"
       ]
     }
   ]

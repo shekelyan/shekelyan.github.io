@@ -14,17 +14,17 @@
 </a>
 </figure>
 <p></p>
-<p><b>Question:</b> How does a system use the stack for function calls?</p>
+<p><b>Question:</b> How does a system use the stack for function calls?</br><i>Hint:</i> Compilers are here presumed part of the system.</p>
 <table style="border:none;">
 <tr style="border:none;">
 <td style="border:none;"><a href="635634292.html"><b><tt>A</tt></b></a></td>
-<td style="border:none;">System does not have a stack, it's a data structure that could be used by some processes</td>
+<td style="border:none;">Stack is not used for function calls, it's just a data structure that could be used by some programs for last-in first-out (LIFO)</td>
 <td style="border:none;"><a href="326026567.html"><b><tt>B</tt></b></a></td>
 <td style="border:none;">Function calls jump to the code of the function and then (to not disturb prior register values) only use the stack segment in memory</td>
 </tr>
 <tr style="border:none;">
 <td style="border:none;"><a href="223212970.html"><b><tt>C</tt></b></a></td>
-<td style="border:none;">Function calls store old contexts (current address, register values etc) in memory using the stack segment</td>
+<td style="border:none;">Current context (current address, register values etc) are backed up on process's stack before jumping to function code</td>
 </tr>
 <tr style="border:none;">
 </tr>

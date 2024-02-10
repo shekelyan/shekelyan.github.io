@@ -8,27 +8,27 @@
       "A": [
         "_On the CPU chip, storing inputs/outputs of operations",
         "In the registry, keeping track of changes",
-        "On the main board, coordinating hardware devices"
+        "On the main board, coordinating hardware devices with each other"
       ]
     },
     {
       "Q": "What is a process?",
       "A": [
         "_Instance of program",
-        "Copy of program image",
+        "Copy of a program image",
         "Executable file on disk"
       ]
     },
     {
       "Q": "Does a process know when it is being interrupted?",
       "A": [
-        "_Processes kept in the dark about scheduling and can only check wallclock time after they run again",
+        "_Processes are kept in the dark about scheduling and can only check wallclock time after they run again",
         "Processes learn about their interruption and then sometimes issues a veto to ensure critical operation",
         "Processes are kept in the loop about their scheduling"
       ]
     },
     {
-      "Q": "Which state is not in the five state model?",
+      "Q": "Which state is <i>not</i> in the five state model?",
       "A": [
         "New: Freshly birthed by some running process",
         "Ready: Waits for dispatch",
@@ -39,7 +39,7 @@
       ]
     },
     {
-      "Q": "What information does the Linux kernel not keep about processes?",
+      "Q": "What information does the Linux kernel <i>not</i> keep about processes?",
       "A": [
         "Identifier",
         "State",
@@ -50,7 +50,7 @@
       ]
     },
     {
-      "Q": "What is not correct about kernel vs user mode?",
+      "Q": "What is <i>not</i> correct about kernel vs user mode?",
       "A": [
         "Kernel mode limits certain powers to kernel process to safeguard system",
         "_Admin users execute programs in kernel mode",
@@ -61,14 +61,14 @@
     {
       "Q": "What is the relationship between Trap and Interrupt?",
       "A": [
-        "_Trap is internally triggered by some exceptional state within process whereas interrupt is externally triggered",
+        "_Trap is internally triggered by some exceptional/special state within process whereas interrupt is externally triggered",
         "Trap is a more general term for interrupt",
         "Interrupt is a more general for trap",
         "Traps are to catch bad processes that maliciously interrupt other processes"
       ]
     },
     {
-      "Q": "Can a mode switch be done without a context switch?",
+      "Q": "Running in user mode, can a mode switch be done without a context switch?",
       "A": [
         "_No, switching to kernel mode implies kernel process takes over some user process (and vice versa)",
         "Yes, those are two unrelated concepts",
@@ -76,7 +76,7 @@
       ]
     },
     {
-      "Q": "Can a process switch be done without a mode switch?",
+      "Q": "Running in user mode, can a process switch be done without a mode switch?",
       "A": [
         "_No, kernel is needed to switch out process",
         "Yes, those are two unrelated concepts",
@@ -84,7 +84,7 @@
       ]
     },
     {
-      "Q": "What is not correct about the dispatcher?",
+      "Q": "What is <i>not</i> correct about the dispatcher?",
       "A": [
         "Dispatcher is part of the kernel",
         "_Dispatcher decides which process to schedule next",
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "Q": "Which process state is not in the two-state model?",
+      "Q": "Which process state is <i>not</i> in the two-state model?",
       "A": ["Running", "Not Running", "_Blocked"]
     },
     {
@@ -113,7 +113,7 @@
       ]
     },
     {
-      "Q": "What does a stack pointer describe?",
+      "Q": "What does a stack pointer describe?</br><i>Hint:</i> Terminology here presumes stack grows towards larger memory addresses.",
       "A": [
         "_Memory address right after last element on stack",
         "Memory address at which last element on stack begins",
@@ -121,11 +121,11 @@
       ]
     },
     {
-      "Q": "How does a system use the stack for function calls?",
+      "Q": "How does a system use the stack for function calls?</br><i>Hint:</i> Compilers are here presumed part of the system.",
       "A": [
-        "_Function calls store old contexts (current address, register values etc) in memory using the stack segment",
+        "_Current context (current address, register values etc) are backed up on process's stack before jumping to function code",
         "Function calls jump to the code of the function and then (to not disturb prior register values) only use the stack segment in memory",
-        "System does not have a stack, it's a data structure that could be used by some processes"
+        "Stack is not used for function calls, it's just a data structure that could be used by some programs for last-in first-out (LIFO)"
       ]
     }
   ]
